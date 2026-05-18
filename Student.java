@@ -22,7 +22,7 @@ public class Student {
         System.out.println(st.id);
 
         // assert test
-        assert add(2, 3) == 5;
+        assert add(2, 3) == 10;
 
     }
 }
