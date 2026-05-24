@@ -16,7 +16,7 @@ public class DictionaryJUnitTest {
 	@BeforeAll
 	public static void setUp() {
 		
-		dict = new ArrayListDictionary<Integer,String>();
+		dict = new LinkedListDictionary<Integer,String>();
 		
 	}
 
@@ -46,7 +46,7 @@ public class DictionaryJUnitTest {
 		dict.insert(3, "grey");
 		dict.remove(0);
 		
-		assertEquals("3:grey , 2:yellow , 1:blue ,", dict.toString());
+		assertEquals("3:grey , 2:yellow , 1:blue , ", dict.toString());
 		
 		assertEquals("grey", dict.find(3), "remove failed"); 
 		
